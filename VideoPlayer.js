@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import Video from 'react-native-video';
 import {
   TouchableWithoutFeedback,
-  TouchableHighlight,
+  TouchableOpacity,
   ImageBackground,
   PanResponder,
   StyleSheet,
