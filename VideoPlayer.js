@@ -919,12 +919,12 @@ export default class VideoPlayer extends Component {
   /**
    * Standard render control function that handles
    * everything except the sliders. Adds a
-   * consistent <TouchableHighlight>
+   * consistent <TouchableOpacity>
    * wrapper and styling.
    */
   renderControl(children, callback, style = {}) {
     return (
-      <TouchableHighlight
+      <TouchableOpacity
         underlayColor="transparent"
         activeOpacity={0.3}
         onPress={() => {
@@ -933,7 +933,7 @@ export default class VideoPlayer extends Component {
         }}
         style={[styles.controls.control, style]}>
         {children}
-      </TouchableHighlight>
+      </TouchableOpacity>
     );
   }
 
